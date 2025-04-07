@@ -1,0 +1,37 @@
+rgums@Hiroshi510-GS MINGW64 ~ (main)
+$ mkdir git_challenge
+
+rgums@Hiroshi510-GS MINGW64 ~ (main)
+$ cd git_challenge
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/rgums/git_challenge/.git/
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ echo "Hello,world!" >> hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git commit -m "Hallo world!"
+[main (root-commit) 5e040b7] Hallo world!
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$  echo "こんにちは、世界！" >> hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git commit -m "こんにちは、世界！"
+[main 72304a2] こんにちは、世界！
+ 1 file changed, 1 insertion(+)
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git log --oneline
+72304a2 (HEAD -> main) こんにちは、世界！
+5e040b7 Hallo world!
