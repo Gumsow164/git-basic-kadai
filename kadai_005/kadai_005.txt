@@ -1,0 +1,44 @@
+rgums@Hiroshi510-GS MINGW64 ~ (main)
+$ mkdir git_challenge
+
+rgums@Hiroshi510-GS MINGW64 ~ (main)
+$ cd git_challenge
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/rgums/git_challenge/.git/
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git commit -m "hello,world!"
+[main (root-commit) 2dd0205] hello,world!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git commit -m "こんにちは、世界！"
+[main 00645d1] こんにちは、世界！
+ 1 file changed, 1 insertion(+)
+
+rgums@Hiroshi510-GS MINGW64 ~/git_challenge (main)
+$ git log
+commit 00645d1ee5cba84e149ccf3bd53aa782a469c2bf (HEAD -> main)
+Author: gumsow164 <r.gumsow@icioud.com>
+Date:   Mon Apr 7 21:42:15 2025 +0900
+
+    こんにちは、世界！
+
+commit 2dd0205c31d3aa393c3249a7d3817c742ec12e5c
+Author: gumsow164 <r.gumsow@icioud.com>
+Date:   Mon Apr 7 21:38:22 2025 +0900
+
+    hello,world!
